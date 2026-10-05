@@ -1,4 +1,5 @@
-  .cal-c {
+ /*flexbox style*/
+ .cal-c {
     display: flex;
     justify-content: center;
     flex-direction: column;
