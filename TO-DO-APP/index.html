@@ -1,19 +1,40 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do-app</title>
+    <title>To-Do App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <h1>To-Do List</h1>
+
     <div class="input-container">
         <input type="text" id="task-input" placeholder="Add a new task...">
-        <button id="add-task-btn">Add</button>
+        <button id="add-task-btn">Add Task</button>
     </div>
-    <ul id="task-list"></ul>
-    
+
+    <section class="task-section">
+        <h2>Pending Tasks</h2>
+        <p id="pending-count">0 pending</p>
+
+        <ul id="task-list"></ul>
+
+        <p id="pending-empty">No pending tasks. Add one to get started!</p>
+    </section>
+
+    <section class="task-section">
+        <h2>Completed Tasks</h2>
+        <p id="completed-count">0 completed</p>
+
+        <ul id="completed-task-list"></ul>
+
+        <p id="completed-empty">No completed tasks yet.</p>
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html>
+```
